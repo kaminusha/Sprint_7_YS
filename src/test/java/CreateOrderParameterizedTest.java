@@ -1,18 +1,21 @@
+import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import io.qameta.allure.junit4.DisplayName;
 import net.datafaker.Faker;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runners.Parameterized;
 import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import ru.yandex.praktikum.Order;
 import ru.yandex.praktikum.OrderSteps;
 
 import java.util.Locale;
 import java.util.concurrent.ThreadLocalRandom;
-import static org.hamcrest.CoreMatchers.notNullValue;
+
 import static java.util.concurrent.TimeUnit.DAYS;
+import static org.hamcrest.CoreMatchers.notNullValue;
 
 // Параметризованный тест для проверки создания заказа с различными цветами самокатов
 @RunWith(Parameterized.class)
@@ -55,6 +58,8 @@ public class CreateOrderParameterizedTest extends BaseTest {
 
     // Тест - проверяем создание заказа с заданным цветом самоката
     @Test
+    @DisplayName("Проверка создания заказа с разными цветами самоката")
+    @Description("Проверка создания заказа с выбором цвета самоката")
     public void sholdCreateOrder() {
         order.setColor(color); // Устанавливаем параметр color в объект заказа
         orderSteps // Отправляем запрос на создание заказа и проверяем ответ
