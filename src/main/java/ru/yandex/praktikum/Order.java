@@ -27,7 +27,7 @@ public class Order {
     public String getLastName() {
         return lastName;
     }
-    public  Order setLastName(String lastName) {
+    public Order setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
@@ -35,7 +35,7 @@ public class Order {
     public String getAddress() {
         return address;
     }
-    public  Order setAddress(String address) {
+    public Order setAddress(String address) {
         this.address = address;
         return this;
     }
@@ -43,7 +43,7 @@ public class Order {
     public String getMetroStation() {
         return metroStation;
     }
-    public  Order setMetroStation(String metroStation) {
+    public Order setMetroStation(String metroStation) {
         this.metroStation = metroStation;
         return this;
     }
@@ -51,7 +51,7 @@ public class Order {
     public String getPhone() {
         return phone;
     }
-    public  Order setPhone(String phone) {
+    public Order setPhone(String phone) {
         this.phone = phone;
         return this;
     }
@@ -59,7 +59,7 @@ public class Order {
     public Integer getRentTime() {
         return rentTime;
     }
-    public  Order setRentTime(Integer rentTime) {
+    public Order setRentTime(Integer rentTime) {
         this.rentTime = rentTime;
         return this;
     }
@@ -67,7 +67,7 @@ public class Order {
     public String getDeliveryData() {
         return deliveryData;
     }
-    public  Order setDeliveryData(String deliveryData) {
+    public Order setDeliveryData(String deliveryData) {
         this.deliveryData = deliveryData;
         return this;
     }

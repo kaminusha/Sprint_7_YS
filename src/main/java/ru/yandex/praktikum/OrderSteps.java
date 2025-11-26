@@ -5,7 +5,7 @@ import io.restassured.response.ValidatableResponse;
 import static io.restassured.RestAssured.given;
 
 public class OrderSteps {
-    @Step("")
+    @Step("Создание курьера")
     public ValidatableResponse createOrder(Order order) {
         return given()
                 .body(order)
@@ -14,14 +14,14 @@ public class OrderSteps {
                 .then();
     }
 
-    @Step("")
+    @Step("Получение списка заказа")
     public ValidatableResponse getListOfOrders () {
         return given()
                 .get ("/api/v1/orders")
                 .then();
     }
 
-    @Step("")
+    @Step("Закрытие заказа")
     public ValidatableResponse cancelOrder (Order order) {
         return given()
                 .body(order)

@@ -11,8 +11,6 @@ import ru.yandex.praktikum.CourierSteps;
 
 import java.util.Locale;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.apache.http.HttpStatus.*;
-import static org.hamcrest.CoreMatchers.*;
 
 @Feature("Создать курьера")
 @Epic("Управление курьерами")

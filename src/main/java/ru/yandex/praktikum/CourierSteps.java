@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 import ru.yandex.praktikum.Courier;
 
 public class CourierSteps {
-    @Step("")
+    @Step("Создание курьера")
     public ValidatableResponse createCourier(Courier courier) {
         return given()
                 .body(courier)
@@ -15,7 +15,7 @@ public class CourierSteps {
                 .then();
     }
 
-    @Step("")
+    @Step("Логин курьера")
     public ValidatableResponse loginCourier (Courier courier) {
         return given()
                 .body(courier)
@@ -24,7 +24,7 @@ public class CourierSteps {
                 .then();
     }
 
-    @Step ("")
+    @Step ("Удаление курьера")
     public ValidatableResponse deleteCourier (Courier courier) {
         return given()
                 .pathParams("id", courier.getId())
